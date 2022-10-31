@@ -1,0 +1,36 @@
+.progress-main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .progress-h1 {
+  }
+  .progress-current {
+    position: relative;
+    border: 4px black solid;
+    color: black;
+    width: 50%;
+    height: 2em;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &::before {
+      content: "‏‏‎ ‎";
+      position: absolute;
+      display: flex;
+      align-items: center;
+      left: 5px;
+      top: 4px;
+      background-color: pink;
+      border-radius: 20px;
+      height: 1.5em;
+      width: calc(var(--inner, 0) * 1%);
+    }
+
+    .progress-h3 {
+      position: absolute;
+    }
+  }
+}
